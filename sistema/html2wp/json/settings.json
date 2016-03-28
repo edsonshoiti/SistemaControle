@@ -1,0 +1,15 @@
+{
+    "widgets": [
+
+    ],
+    "menus": [
+
+    ],
+    "pages": [
+        {
+            "title": "Sistema de controle de estoque",
+            "slug": "front-page",
+            "template": "front-page.php"
+        }
+    ]
+}
