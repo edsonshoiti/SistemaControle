@@ -1,0 +1,64 @@
+﻿
+/* regra aplicada em todo lugar */
+body { background: ; }
+ 
+/* aplica somente a partir de 320px */
+@media screen and (min-width: 320px) {
+   body { font-size: 80%; }
+}
+ 
+/* aplica somente a partir de 480px em landscape */
+@media screen and (min-width: 480px) and (orientation: landscape) {
+   nav { float: left; }
+}
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Layout para tablets: 481 px a 768 px. Herda estilos de: Layout para celulares. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Layout para desktops: 769 px até o máximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
